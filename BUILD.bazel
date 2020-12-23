@@ -1,0 +1,10 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+    name = "tsconfig-no-outdir",
+    srcs = [
+      "a.ts",
+      "bar.json",
+    ],
+    tsconfig = "tsconfig.json",
+)
